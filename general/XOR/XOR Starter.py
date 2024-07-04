@@ -6,3 +6,4 @@ for i in 'label':
     temp=temp.decode()
     flag+=temp
 print(flag)
+# the answer is crypto{aloha}
