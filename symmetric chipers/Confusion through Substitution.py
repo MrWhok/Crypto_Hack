@@ -43,6 +43,9 @@ state = [
     [64, 80, 182, 255],
 ]
 
+# Other Solution:
+# def sub_bytes(s, sbox=s_box):
+#     return bytes(list(map(lambda x: sbox[x],sum(s,[]))))
 
 def sub_bytes(s, sbox=s_box):
     result=[]
