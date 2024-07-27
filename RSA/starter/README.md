@@ -7,16 +7,15 @@
                                      2. 1<e<ϕ(N)
 5. Calculate d for `private key`, d=e^-1 mod N. We can use this code in python
     ```python
-    pow(e,-1,N)
+    pow(e,-1,ϕ(N))
     ```
 
 # RSA Encryption
 M = Plaintext, which is M < N.
 If we want to get the ciphertext, we can do C=M^e mod N. We can use this code in python
-    ```python
-    C=pow(M,e,N)
-    ```
-
+  ```python
+  C=pow(M,e,N)
+  ```
 
 # RSA Decryption
 C = ciphertext, 
