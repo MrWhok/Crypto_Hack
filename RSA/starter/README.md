@@ -13,5 +13,11 @@
 M = Plaintext, which is M < N.
 If we want to get the ciphertext, we can do C=M^e mod N. We can use this code in python
   ```c
-    C=pow(M,e,N)
+  C=pow(M,e,N)
+
+# RSA Decryption
+C = ciphertext, 
+If we want to get the plaintext, we can do M=C^d mod N. We can use this code in python
+  ```c
+  M=pow(C,d,N)
 
