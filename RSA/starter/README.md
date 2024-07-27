@@ -12,6 +12,6 @@
 # RSA Encryption
 M = Plaintext, which is M < N.
 If we want to get the ciphertext, we can do C=M^e mod N. We can use this code in python
-  ```
-  C=pow(M,e,N)
   ```c
+    C=pow(M,e,N)
+
