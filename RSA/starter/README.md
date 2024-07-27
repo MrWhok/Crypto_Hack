@@ -6,9 +6,8 @@
                                      1. GCD(e,ϕ(N))=1
                                      2. 1<e<ϕ(N)
 5. Calculate d for `private key`, d=e^-1 mod N. We can use this code in python
-     ```
-     pow(e,-1,N)
-     ```c
+    ```c
+    pow(e,-1,N)
 
 # RSA Encryption
 M = Plaintext, which is M < N.
