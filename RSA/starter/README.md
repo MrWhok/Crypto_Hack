@@ -7,7 +7,7 @@
                                      2. 1<e<ϕ(N)
 5. Calculate d for `private key`, d=e^-1 mod N. We can use this code in python
     ```c
-    pow(e,-1,N)
+    pow(d,-1,N)
 
 # RSA Encryption
 M = Plaintext, which is M < N.
