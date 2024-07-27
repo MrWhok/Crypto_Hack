@@ -1,24 +1,25 @@
 # RSA ALGORITHM
-1. Select prime number between p and q, p!=q
-2. N=p*q
-3. ϕ(N)=(p-1)*(q-1)
-4. Select e for `public key`, with rules:
-                                     1. GCD(e,ϕ(N))=1
-                                     2. 1<e<ϕ(N)
-5. Calculate d for `private key`, d=e^-1 mod N. We can use this code in python
-    ```c
-    pow(d,-1,N)
+1. Select prime numbers \( p \) and \( q \), \( p \neq q \)
+2. \( N = p \times q \)
+3. \( \phi(N) = (p-1) \times (q-1) \)
+4. Select \( e \) for the public key, with rules:
+   1. \( \text{GCD}(e, \phi(N)) = 1 \)
+   2. \( 1 < e < \phi(N) \)
+5. Calculate \( d \) for the private key, \( d = e^{-1} \mod \phi(N) \). We can use this code in Python:
+    ```python
+    d = pow(e, -1, phi_N)
+    ```
 
 # RSA Encryption
-M = Plaintext, which is M < N.
-If we want to get the ciphertext, we can do C=M^e mod N. We can use this code in python
-    ```c
-    C=pow(M,e,N)
-
+\( M \) = Plaintext, which is \( M < N \).
+If we want to get the ciphertext, we can do \( C = M^e \mod N \). We can use this code in Python:
+    ```python
+    C = pow(M, e, N)
+    ```
 
 # RSA Decryption
-C = ciphertext, 
-If we want to get the plaintext, we can do M=C^d mod N. We can use this code in python
-  ```c
-  M=pow(C,d,N)
-
+\( C \) = Ciphertext.
+If we want to get the plaintext, we can do \( M = C^d \mod N \). We can use this code in Python:
+    ```python
+    M = pow(C, d, N)
+    ```
