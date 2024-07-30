@@ -57,4 +57,8 @@ print(f"Original message: {M}")
 print(f"Encrypted message: {C}")
 print(f"Decrypted message: {M_decrypted}")
 ```
+# ϕ(N) Notes
+1. Factor of N is p^2, so ϕ(N)=p(p-1)
+2. Factor of N is p*q, so ϕ(N)=(p-1)*(q-1)
+3. Factor of N is p*q*r*.., so ϕ(N)=(p-1)*(q-1)*(r-1)*...
 
