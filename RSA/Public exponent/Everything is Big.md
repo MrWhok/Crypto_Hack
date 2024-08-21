@@ -22,5 +22,4 @@ if d:
     print(flag)
 else:
     print("Wiener's Attack failed.")
-```python
-
+```
