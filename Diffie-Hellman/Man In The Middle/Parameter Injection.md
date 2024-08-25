@@ -56,8 +56,8 @@ print(decrypt_flag(0,alice['iv'],alice['encrypted_flag']))
 refrence:https://hackmd.io/@DSAteam/rJyr28GgA#Parameter-Injection
 
 # Note
-1. Why in this code `bob['p']='1'`?
+1. Why in this code `bob['p']='1'`?\
    Because if p is set to 1, any number modulo 1 is 0.
    Remember this `shared secret=g^ab modulo p`
-2. Why in this code we send `shared secret=0` to function?
+2. Why in this code we send `shared secret=0` to function?\
    Referred to note 1, any number modulo 1 is 0 so shared secret is 0
